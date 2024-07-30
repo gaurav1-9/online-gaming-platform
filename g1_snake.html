@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style_snake.css">
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="mainHead">
+        <h1>
+            SNAKE GAME
+        </h1>
+    </div>
+    <div class="body">
+
+        <div id="board"></div>
+        <div class="container">
+            <div id="score">
+                <u>SCORE</u>
+                <div id="scoreDisp">0</div>
+            </div>
+            <div class="help">
+                <div class="info"><u>GAME INFO</u></div>
+                <div class="snakeBlock">
+                    <div class="blockInfo">→SNAKE</div>
+                </div>
+                <div class="foodBlock">
+                    <div class="blockInfo">→FOOD</div>
+                </div>
+                <div class="gameDescription">Eat the food to help the snake grow</div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="gamelogic_Snake.js"></script>
+</html>
