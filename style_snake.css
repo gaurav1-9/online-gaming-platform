@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FT88", "FT88-SCHOOL";
+}
+
+body {
+    background-color: rgb(148, 154, 160);
+}
+
+h1 {
+    font-size: 115px;
+}
+
+.mainHead {
+    padding-top: 35px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.body {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.head{
+    background-color: rgb(78, 78, 78);
+}
+.food{
+    background-color: rgb(189, 189, 189);
+    border: 1px solid darkred;
+}
+#board {
+    height: 70vh;
+    width: 70vh;
+    border: 2px solid black;
+    border-radius: 15px;
+    display: grid;
+    box-shadow: rgb(215, 215, 215) 0 0 10px ;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+.loader {
+    width: 100vw;
+    height: 1vh;
+    background-color: black;
+    visibility: visible;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0vw;
+    }
+
+    70% {
+        width: 80vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+#score {
+    font-size: 30px;
+    font-weight: bold;
+    border: 2px solid black;
+    height: 25vh;
+    width: 30vh;
+    margin-left: 5vh;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgb(215, 215, 215) 0 0 10px ;
+}
+
+#scoreDisp {
+    padding-top: 15px;
+    font-size: 90px;
+    font-weight: bold;
+    text-align: center;
+    align-content: center;
+}
+.help{
+    height:42.5vh;
+    width:30vh;
+    margin:2vh 5vh;
+    margin-right: 0;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px solid black;
+    display:flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    box-shadow: rgb(215, 215, 215) 0 0 10px ;
+}
+.info{
+    margin-top:15px;
+    font-size: 27px;
+    font-weight: bold;
+}
+.snakeBlock{
+    margin:8px 19px;
+    height: 3.8vh;
+    width: 3.8vh;
+    background-color: rgb(78, 78, 78);
+    border: 1px solid black;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+}
+.foodBlock{
+    margin:8px 19px;
+    height: 3.8vh;
+    width: 3.8vh;
+    background-color: rgb(189, 189, 189);
+    border: 1px solid darkred;
+    border-radius: 5px;
+    display:flex;
+    flex-direction: row;
+}
+.blockInfo{
+    margin-left:35px;
+    width: 30vh;
+    padding-left:2px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+.gameDescription{
+    align-self: center;
+    width: 20vh;
+    margin:12px;
+    padding:10px;
+    font-size: 22px;
+    text-align: center;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 4px;
+}

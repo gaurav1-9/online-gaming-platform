@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "FT88", "FT88-SCHOOL";
+}
+
+body {
+    background-color: rgb(148, 154, 160);
+}
+
+h1 {
+    font-size: 115px;
+}
+
+.mainHead {
+    padding-top: 60px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.loader {
+    width: 100vw;
+    height: 1vh;
+    background-color: black;
+    visibility: visible;
+    animation: load 1s ease-in-out 1;
+}
+
+@keyframes load {
+    0% {
+        width: 0vw;
+    }
+
+    70% {
+        width: 80vw;
+    }
+
+    100% {
+        width: 100vw;
+    }
+}
+
+#game {
+    width: 670px;
+    height: 200px;
+    border: 3px solid black;
+    border-radius: 5px;
+    box-shadow: rgb(215, 215, 215) 0 0 10px;
+}
+
+#obstacles {
+    width: 30px;
+    background-color: black;
+    height: 30px;
+    position: relative;
+    top: 67px;
+    left: 639px;
+    border: 1px solid black;
+    border-radius: 2px;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+#character {
+    width: 40px;
+    background-color: rgb(78, 78, 78);
+    height: 100px;
+    position: relative;
+    top: 98px;
+    left: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+.jumpAnimation {
+    animation: jump 500ms linear;
+}
+
+.obstacleAnimation {
+    display: visible;
+    animation: slide 1.3s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+        left: 639px;
+    }
+
+    100% {
+        left: 0px;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: 99px;
+    }
+
+    30% {
+        top: 49px;
+    }
+
+    70% {
+        top: 49px;
+    }
+
+    100% {
+        top: 99px;
+    }
+}
+
+.playArea {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.info {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gameHelp {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 5px;
+    height: 33vh;
+    width: 385px;
+    border: 3px solid black;
+    box-shadow: rgb(215, 215, 215) 0 0 10px;
+}
+
+.player {
+    width: 3.8vh;
+    background-color: rgb(78, 78, 78);
+    height: 3.8vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+
+}
+
+.playerInfo {
+    margin-left: 35px;
+    width: 30vh;
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.obstacle {
+    width: 3.8vh;
+    background-color: rgb(0, 0, 0);
+    height: 3.8vh;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+    box-shadow: 0 0 5px rgb(255, 0, 0);
+}
+
+.obstacleInfo {
+    margin-left: 35px;
+    width: 30vh;
+    padding-left: 2px;
+    font-weight: bold;
+    font-size: 25px;
+    text-align: left;
+}
+
+.gameDescription {
+    margin: 12px;
+    padding: 10px;
+    font-size: 25px;
+    text-align: center;
+    width: 340px;
+    border-top: 4px solid black;
+    border-bottom: 4px solid black;
+    border-radius: 4px;
+}
+
+.details {
+    margin: 15px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.gameElements {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.gameDetailsContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.gameplay {
+    margin-left: 200px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 20px;
+    border-left: 4px solid black;
+    border-right: 4px solid black;
+    border-radius: 4px;
+    font-weight: bold;
+}
